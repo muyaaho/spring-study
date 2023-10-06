@@ -18,7 +18,14 @@ public class App02HelloWorldSpring {
 		System.out.println(context.getBean("name"));
 		System.out.println(context.getBean("age"));
 		System.out.println(context.getBean("person"));
-		System.out.println(context.getBean("address"));
+		System.out.println(context.getBean("person2MethodCall"));
+		System.out.println(context.getBean("person3Parameters"));
+		System.out.println(context.getBean("address2"));
+		//System.out.println(context.getBean(Address.class));
+		/*
+		 * 에러 생기는 이유: Address.class는 spring bean을 불러오는데(getBean) address인 bean?이
+		 * address2, address3 둘 다 있어 어떤 bean을 가져올지 몰라서 생기는 에러
+		 */
 		
 	}
 
