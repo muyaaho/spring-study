@@ -1,9 +1,10 @@
 package com.in28minutes.learnspringframework.examples.c1;
 
 import org.springframework.context.annotation.Primary;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
-@Component
+//@Component
+@Repository		// MongoDB에 접근할 수 있으므로 
 @Primary
 public class MongoDbDataService implements DataService{
 
